@@ -30,6 +30,7 @@ type UpstreamServer struct {
 	Address     string
 	Port        string
 	MaxFails    int
+	MaxConns    int
 	FailTimeout string
 	SlowStart   string
 	Resolve     bool
@@ -168,6 +169,7 @@ func NewUpstreamWithDefaultServer(name string) Upstream {
 				Address:     "127.0.0.1",
 				Port:        "8181",
 				MaxFails:    1,
+				MaxConns:    0,
 				FailTimeout: "10s",
 			},
 		},
