@@ -23,6 +23,7 @@ type Upstream struct {
 	LBMethod        string
 	Queue           int64
 	QueueTimeout    int64
+	UpstreamZoneSize string
 }
 
 // UpstreamServer describes a server in an NGINX upstream.

@@ -29,6 +29,7 @@ type ConfigParams struct {
 	ProxyProtocol                 bool
 	ProxyHideHeaders              []string
 	ProxyPassHeaders              []string
+	UpstreamZoneSize              string
 	HSTS                          bool
 	HSTSBehindProxy               bool
 	HSTSMaxAge                    int64
