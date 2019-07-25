@@ -170,6 +170,7 @@ type MainConfig struct {
 func NewUpstreamWithDefaultServer(name string) Upstream {
 	return Upstream{
 		Name: name,
+		UpstreamZoneSize: "256k",
 		UpstreamServers: []UpstreamServer{
 			{
 				Address:     "127.0.0.1",
