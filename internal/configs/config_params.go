@@ -110,7 +110,7 @@ func NewDefaultConfigParams() *ConfigParams {
 		SSLPorts:                   []int{443},
 		MaxFails:                   1,
 		MaxConns:                   0,
-		UpstreamZoneSize: 			"256k",
+		UpstreamZoneSize: 		    "256k",
 		FailTimeout:                "10s",
 		LBMethod:                   "random two least_conn",
 		MainErrorLogLevel:          "notice",
